@@ -33,58 +33,78 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <!-- Logo and Agency Name (Always visible) -->
-            <a class="navbar-brand d-flex align-items-center order-0" href="#">
-                <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-                <span id="agency-name" class="ms-2 fw-bolder">Japan Travel</span>
-            </a>
+    <div class="sticky-top bg-transparent">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo and Agency Name (Always visible) -->
+                <a class="navbar-brand d-flex align-items-center order-0" href="#">
+                    <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top"
+                        alt="Logo">
+                    <span id="agency-name" class="ms-2 fw-bolder">Japan Travel</span>
+                </a>
 
-            <!-- Navbar Menu Items (Collapsed on Mobile) -->
-            <div class="collapse navbar-collapse text-center order-3 order-lg-1 py-3 py-lg-0" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span id="nav-menu-item-videos">Videos</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span id="nav-menu-item-images">Images</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span id="nav-menu-item-news">News</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span id="nav-menu-item-team">Team</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span id="nav-menu-item-contact">Contact</span></a>
-                    </li>
-                </ul>
+                <!-- Navbar Menu Items (Collapsed on Mobile) -->
+                <div class="collapse navbar-collapse text-center order-3 order-lg-1 py-3 py-lg-0" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="nav-menu-item-videos">Videos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="nav-menu-item-images">Images</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="nav-menu-item-news">News</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="nav-menu-item-team">Team</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span id="nav-menu-item-contact">Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger Icon (Rightmost on Mobile) -->
+                <button class="navbar-toggler ms-auto  border order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Language Switcher (Always visible) -->
+                <div class="btn-group language-switcher d-flex align-items-center order-1 order-lg-3" role="group"
+                    aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="english-button" autocomplete="off"
+                        checked>
+                    <label class="btn btn-outline-primary" for="english-button"><span class="en">ENG</span></label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="bangla-button" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="bangla-button"><span class="bn">বাংলা</span></label>
+                </div>
+
+
             </div>
 
-            <!-- Hamburger Icon (Rightmost on Mobile) -->
-            <button class="navbar-toggler ms-auto  border order-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <!-- Language Switcher (Always visible) -->
-            <div class="btn-group language-switcher d-flex align-items-center order-1 order-lg-3" role="group"
-                aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="english-button" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="english-button"><span class="en">ENG</span></label>
-
-                <input type="radio" class="btn-check" name="btnradio" id="bangla-button" autocomplete="off">
-                <label class="btn btn-outline-primary" for="bangla-button"><span class="bn">বাংলা</span></label>
+        </nav>
+        <!-- Sticky Buttons Below Navbar -->
+        <div class="container-fluid bg-transparent py-2">
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-danger me-2" data-bs-toggle="modal"
+                    data-bs-target="#probashir-helicopter">
+                    <span class="bn fs-6">প্রবাসীর হেলিকপ্টার</span></button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#language-coaching"><span class="en fs-6">Nabeshima Japanese Language
+                        Institute</span></button>
             </div>
-
-
         </div>
+    </div>
 
 
-    </nav>
+
+
+
 
     <!-- Hero Carousel  -->
     <div id="HeroCarousel" class="carousel slide  carousel-fade" data-bs-ride="carousel">
@@ -320,7 +340,7 @@
     <!-- Footer  -->
     <footer class="bg-dark text-white py-4">
         <div class="container p-5">
-            <div class="row justify-content-between">
+            <div class="row g-4 justify-content-between">
                 <!-- About Us Section -->
                 <div class="col-md-4">
                     <h4><span id="footer-about-us-title">About Us</span></h4>
@@ -367,6 +387,48 @@
         </div>
     </footer>
 
+
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal modal-xl fade modal-dialog-scrollable" id="probashir-helicopter" tabindex="-1"
+        aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Modal 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Content for Modal 1...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal modal-xl fade modal-dialog-scrollable" id="language-coaching" tabindex="-1"
+        aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Modal 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Content for Modal 2...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
