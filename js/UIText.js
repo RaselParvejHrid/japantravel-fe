@@ -1,5 +1,5 @@
 const UIText = {
-  agencyName: {
+  "agency-name": {
     en: "Japan Travel",
     bn: "জাপান ট্রাভেল",
   },
