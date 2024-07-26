@@ -22,10 +22,14 @@ function changeLanguage(language) {
 
   if (language === "en") {
     $("body").removeClass("bn");
+    $("#bangla-button").prop("checked", false);
+    $("#english-button").prop("checked", true);
   }
 
   if (language === "bn") {
     $("body").addClass("bn");
+    $("#english-button").prop("checked", false);
+    $("#bangla-button").prop("checked", true);
   }
 
   updateContent(language);
