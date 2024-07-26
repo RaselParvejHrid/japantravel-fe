@@ -108,9 +108,41 @@ const OurServicesText = {
   },
 };
 
+const FooterText = {
+  "footer-about-us-title": {
+    en: "About Us",
+    bn: "আমরা কারা?",
+  },
+  "footer-about-us": {
+    en: "We are a travel agency helping students and workers from Bangladesh to Japan with visa applications, consultations, and more.",
+    bn: "জাপান ট্রাভেল একটি ট্রাভেল এজেন্সি। আমরা ভিসা আবেদন, পরামর্শসহ সংশ্লিষ্ট বিভিন্ন বিষয়ে বাংলাদেশ থেকে জাপান যেতে প্রত্যাশী শিক্ষার্থী ও ওয়ার্কারদেরকে সেবা দিয়ে থাকি।",
+  },
+  "footer-contact-us-title": {
+    en: "Contact US",
+    bn: "আমাদের সাথে যোগাযোগ করুন",
+  },
+  "footer-contact-japan-office-label": {
+    en: "Japan Office",
+    bn: "জাপান অফিস",
+  },
+  "footer-contact-bangladesh-office-label": {
+    en: "Bangladesh Office",
+    bn: "বাংলাদেশ অফিস",
+  },
+  "footer-contact-bangladesh-office": {
+    en: '1st Floor,<br> Building Opposite to Muradnagar Police Station,<br/> Muradnagar, Cumilla.<br/>Call at <a href="tel:+8801790405662" class="text-white text-decoration-none">+8801790405662</a><br>Or, <a href="tel:+8801941702035" class="text-white text-decoration-none">+8801941702035</a></br>',
+    bn: '২য় তলা, <br> মুরাদনগর থানার বিপরীত পাশের ভবন,<br/> মুরাদনগর, কুমিল্লা।<br/>কল করুনঃ <a href="tel:+8801790405662" class="text-white text-decoration-none">+8801790405662</a><br> অথবা <a href="tel:+8801941702035" class="text-white text-decoration-none">+8801941702035</a> নাম্বারে</br>',
+  },
+  "footer-contact-email-label": {
+    en: "Email: ",
+    bn: "ইমেইলঃ ",
+  },
+};
+
 const UIText = {
   ...HeroCarouselText,
   ...OurServicesText,
+  ...FooterText,
   "agency-name": {
     en: "Japan Travel",
     bn: "জাপান ট্রাভেল",

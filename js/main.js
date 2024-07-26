@@ -8,7 +8,7 @@ function updateContent(language) {
 
     if (UIText[id][language]) {
       //UIText is defined in /js/UIText.js
-      $(this).text(UIText[id][language]);
+      $(this).html(UIText[id][language]);
     }
     console.log("Done");
   });
