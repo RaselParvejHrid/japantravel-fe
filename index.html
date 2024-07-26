@@ -32,7 +32,62 @@
 </head>
 
 <body>
-    Hi
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Logo and Agency Name (Always visible) -->
+            <a class="navbar-brand d-flex align-items-center order-0" href="#">
+                <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+                <span id="agency-name" class="ms-2 fw-bolder">Japan Travel</span>
+            </a>
+
+            <!-- Navbar Menu Items (Collapsed on Mobile) -->
+            <div class="collapse navbar-collapse text-center order-3 order-lg-1 py-3 py-lg-0" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="nav-menu-item-videos">Videos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="nav-menu-item-images">Images</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="nav-menu-item-news">News</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="nav-menu-item-team">Team</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span id="nav-menu-item-contact">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Icon (Rightmost on Mobile) -->
+            <button class="navbar-toggler ms-auto  border order-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Language Switcher (Always visible) -->
+            <div class="btn-group language-switcher d-flex align-items-center order-1 order-lg-3" role="group"
+                aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="english-button" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="english-button"><span class="en">ENG</span></label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="bangla-button" autocomplete="off">
+                <label class="btn btn-outline-primary" for="bangla-button"><span class="bn">বাংলা</span></label>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+
+
 </body>
 
 </html>

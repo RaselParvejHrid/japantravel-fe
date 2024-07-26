@@ -2,10 +2,15 @@
 function updateContent(language) {
   $("[id]").each(function () {
     const id = $(this).attr("id");
+    console.log(id);
+
+    if (!UIText[id]) return;
+
     if (UIText[id][language]) {
       //UIText is defined in /js/UIText.js
       $(this).text(UIText[id][language]);
     }
+    console.log("Done");
   });
 }
 
@@ -26,13 +31,16 @@ function changeLanguage(language) {
   updateContent(language);
 }
 
-// Set default language on document ready
 $(document).ready(() => {
+  // Registering Event Listeners for Language Switchers
+  $("#english-button").on("change", () => changeLanguage("en"));
+  $("#bangla-button").on("change", () => changeLanguage("bn"));
+
+  //Setting Site Language
   const currentSiteLanguage = localStorage.getItem("currentSiteLanguage");
   if (!["en", "bn"].includes(currentSiteLanguage)) {
-    localStorage.setItem("currentSiteLanguage", "en");
-    updateContent("en");
+    changeLanguage("en");
   } else {
-    updateContent(currentSiteLanguage);
+    changeLanguage(currentSiteLanguage);
   }
 });
